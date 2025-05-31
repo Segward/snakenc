@@ -22,4 +22,9 @@ CMakeFiles/snakenc.dir/src/snakenc.cpp.o: \
  /usr/include/bits/floatn-common.h /usr/include/wchar.h \
  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/unctrl.h /usr/include/curses.h
+ /usr/include/unctrl.h /usr/include/curses.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/string.h \
+ /usr/include/strings.h

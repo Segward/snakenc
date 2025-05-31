@@ -3,10 +3,15 @@
 
 CMakeFiles/snakenc.dir/src/snakenc.cpp.o
  /home/segward/Programming/snakenc/src/snakenc.cpp
+ /usr/include/bits/confname.h
+ /usr/include/bits/environments.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
+ /usr/include/bits/getopt_core.h
+ /usr/include/bits/getopt_posix.h
  /usr/include/bits/libc-header-start.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/posix_opt.h
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
@@ -26,6 +31,7 @@ CMakeFiles/snakenc.dir/src/snakenc.cpp.o
  /usr/include/bits/types/struct_FILE.h
  /usr/include/bits/types/wint_t.h
  /usr/include/bits/typesizes.h
+ /usr/include/bits/unistd_ext.h
  /usr/include/bits/wchar.h
  /usr/include/bits/wordsize.h
  /usr/include/curses.h
@@ -33,14 +39,41 @@ CMakeFiles/snakenc.dir/src/snakenc.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/linux/close_range.h
  /usr/include/ncurses_dll.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
+ /usr/include/string.h
+ /usr/include/strings.h
  /usr/include/sys/cdefs.h
  /usr/include/unctrl.h
+ /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h
+
+snakenc
+ /usr/lib/Scrt1.o
+ /usr/lib/crti.o
+ /usr/lib/crtn.o
+ /usr/lib/libc.so
+ /usr/lib/libcurses.so
+ /usr/lib/libform.so
+ /usr/lib/libformw.so
+ /usr/lib/libgcc_s.so
+ /usr/lib/libgcc_s.so.1
+ /usr/lib/libm.so
+ /usr/lib/libncursesw.so
+ /usr/lib/libstdc++.so
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a
+ /usr/lib/ld-linux-x86-64.so.2
+ /usr/lib/libc.so.6
+ /usr/lib/libc_nonshared.a
+ /usr/lib/libm.so.6
+ /usr/lib/libmvec.so.1
+ /home/segward/Programming/snakenc/build/CMakeFiles/snakenc.dir/src/snakenc.cpp.o
 
