@@ -3,41 +3,54 @@
 #include <string.h>
 
 int main(int argc, char **argv) {
+    // Initialize ncurses
     initscr();
     noecho();
     cbreak();
     curs_set(0);
     keypad(stdscr, TRUE);
-
+    
+    // Enable colors
     start_color();
-    init_pair(1, COLOR_GREEN, COLOR_BLACK);
-    init_pair(2, COLOR_WHITE, COLOR_BLACK);
+    init_pair(1, COLOR_WHITE, COLOR_BLACK);
+    init_pair(2, COLOR_RED, COLOR_RED);
 
-    const char *t1 = "Hello, World!";
-    const char *t2 = "Goodbye, World!";
-    int wt1 = strlen(t1);
-    int wt2 = strlen(t2);
-    int height, width;
+    // Get the screen size
+    int yMax, xMax;
+    getmaxyx(stdscr, yMax, xMax);
 
-    while (true) {
-        getmaxyx(stdscr, height, width);
-        clear();
+    // Make sizes for the main window
+    int winH = 20;
+    int winW = 40;
+    int winY = (yMax - winH) / 2;
+    int winX = (xMax - winW) / 2;
 
-        for (int i = 0; i < wt1; ++i) {
-          mvaddch(height/2, (width - wt1)/2 + i, '-');
-          mvaddch(height/2 - 1, (width - wt1)/2 + i, '-');
-        }
+    // Create the main window
+    WINDOW *mWin = newwin(winH, winW, winY, winX);
+    box(mWin, 0, 0);
+    wbkgd(mWin, COLOR_PAIR(1));
+    wrefresh(mWin);
 
-        attron(COLOR_PAIR(1));
-        mvprintw(height/2, (width - wt1)/2, t1);
-        attroff(COLOR_PAIR(1));
-        
-        attron(COLOR_PAIR(2));
-        mvprintw(height/2 + height/4, (width - wt2)/2, t2);    
-        attroff(COLOR_PAIR(2));    
+    // Make sizes for the sub window
+    int subH = 2;
+    int subW = 3;
+    int subY = (winH - subH) / 2;
+    int subX = (winW - subW) / 2;
 
-        refresh();
-        napms(100);
+    // Create the sub window
+    WINDOW *sWin = derwin(mWin, subH, subW, subY, subX);
+    box(sWin, 0, 0);
+    wbkgd(sWin, COLOR_PAIR(2));
+    wrefresh(sWin);
+    
+    int ch;
+    while (1) {
+      ch = getch();
+      
+      if (ch == KEY_DOWN) {
+      
+      } 
+   
     }
 
     endwin();
