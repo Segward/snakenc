@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/segward/Programming/snakenc/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

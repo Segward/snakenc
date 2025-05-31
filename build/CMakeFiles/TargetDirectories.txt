@@ -1,0 +1,3 @@
+/home/segward/Programming/snakenc/build/CMakeFiles/snakenc.dir
+/home/segward/Programming/snakenc/build/CMakeFiles/edit_cache.dir
+/home/segward/Programming/snakenc/build/CMakeFiles/rebuild_cache.dir
